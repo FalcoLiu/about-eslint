@@ -1,0 +1,33 @@
+// .eslintrc
+{
+  "extends": ["plugin:@typescript-eslint/recommended","plugin:prettier/recommended"], // 扩展项
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true // 支持全局的 es6 语法
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest", // 支持 es6 语法
+    "sourceType": "module"
+  }, 
+  "plugins": [
+    "prettier"
+  ],
+  "globals": {
+    "var1": "writable",
+    "var2": "readonly"
+  },
+  "rules": {
+      /**
+       * key 是规则
+       * value 的第一个值表示规则的限制，取值范围为
+       *  "off" or 0 - 关闭规则
+          "warn" or 1 - 启用规则，不符合会警告
+          "error" or 2 - 启用规则，不符合直接报错
+       */
+      // "semi": ["error", "always"],
+      // "quotes": ["error", "double"],
+      "prettier/prettier": "error" // 开启 prettier 规则
+  }
+}
