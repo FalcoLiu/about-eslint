@@ -6,4 +6,4 @@ const b1 = "b1";
 const res = foo(a1, b1);
 console.log(res);
 
-let aaa = '123'
+let aaa = '1234'
